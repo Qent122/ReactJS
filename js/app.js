@@ -9,7 +9,7 @@ hello = () => {
 
 hello = () => "hello World !"
 
-// document.getElementById("app").innerHTML = hello()
+document.getElementById('app').innerHTML = hello()
 
 console.log(hello);
 
@@ -23,3 +23,6 @@ const tab2 = tab.map(elementTab => {
 
 console.log(tab);
 console.log(tab2);
+
+
+
