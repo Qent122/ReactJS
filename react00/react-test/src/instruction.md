@@ -1,0 +1,1 @@
+- creer un composant footer qui devra acfficher le nom de voter compagnie et le copyright
