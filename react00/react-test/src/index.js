@@ -6,6 +6,7 @@ import Footer from "./footer/footer";
 import Header from "./header/header";
 import Emoji from "./emoji/emoji";
 import Produit from "./produit/produit";
+import Message from "./message/message";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,6 +14,7 @@ root.render(
     <Header />
     <Emoji />
     <Produit />
+    <Message />
     <App />
     <Footer />
   </React.StrictMode>
