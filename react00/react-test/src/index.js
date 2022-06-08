@@ -7,6 +7,7 @@ import Header from "./header/header";
 import Emoji from "./emoji/emoji";
 import Produit from "./produit/produit";
 import Message from "./message/message";
+import Card from "./card/card";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -16,7 +17,8 @@ root.render(
     <Produit />
     <Message messagePasser="Yo les Reacteux !" prenom="Maurice" />
     <Message messagePasser="I love green." prenom="Rachida" />
-    <Message messagePasser="Faite l'amour et du JS !" prenom="Geraldine" />
+    <Message messagePasser="Faite l'amour et du JSX !" prenom="Geraldine" />
+    <Card />
     <App />
     <Footer />
   </React.StrictMode>

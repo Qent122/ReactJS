@@ -1,0 +1,10 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card figure img{
+    height: 10rem;
+    aspect-ratio: 1;
+    
+}
