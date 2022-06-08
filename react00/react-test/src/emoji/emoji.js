@@ -59,7 +59,7 @@ const emojis = [
 
 export default function Emoji() {
   return (
-    <>
+    <div id="emoji">
       <ul>
         {emojis.map((emoji) => (
           <li key={emoji.emoji}>
@@ -71,6 +71,6 @@ export default function Emoji() {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 }

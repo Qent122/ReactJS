@@ -1,0 +1,12 @@
+.produit{
+    height: 3rem;
+    background-color: #f00;
+}
+
+span{
+    color:#fff
+}
+
+.produit ul li button{
+    font-size: 1rem;
+}

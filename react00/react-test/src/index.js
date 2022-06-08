@@ -5,12 +5,14 @@ import App from "./app/App";
 import Footer from "./footer/footer";
 import Header from "./header/header";
 import Emoji from "./emoji/emoji";
+import Produit from "./produit/produit";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Header />
     <Emoji />
+    <Produit />
     <App />
     <Footer />
   </React.StrictMode>
