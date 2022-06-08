@@ -62,8 +62,12 @@ export default function Emoji() {
     <>
       <ul>
         {emojis.map((emoji) => (
-          <li>
-            {emoji.emoji} {emoji.name}
+          <li key={emoji.emoji}>
+            <button onClick={montrerEmoji}>
+              <span role="img" id={emoji.name}>
+                {emoji.emoji}
+              </span>
+            </button>
           </li>
         ))}
       </ul>
