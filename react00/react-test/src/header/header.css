@@ -1,0 +1,33 @@
+.header {
+    min-height: 8rem;
+    border-bottom: 1px solid #fff;
+    background-color: #282c34;
+    color: #61dafb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.presentation{
+    display: flex;
+}
+.nav ul{
+    list-style: none;
+    gap: 5rem;
+    display: flex;
+
+}
+.logo{
+    height: 5rem;
+    animation: anim-logo infinite 1s ;
+}
+
+@keyframes anim-logo {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

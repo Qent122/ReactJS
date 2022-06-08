@@ -1,14 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import Footer from './footer'
-import Header from './header'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./app/App";
+import Footer from "./footer/footer";
+import Header from "./header/header";
+import Emoji from "./emoji/emoji";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Header />
+    <Emoji />
     <App />
     <Footer />
   </React.StrictMode>
