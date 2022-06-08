@@ -20,4 +20,14 @@
 }
 .logo{
     height: 5rem;
+    animation: anim-logo infinite 1s ;
 }
+
+@keyframes anim-logo {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
