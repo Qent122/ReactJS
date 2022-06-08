@@ -9,17 +9,17 @@ const produits = [
 ];
 
 export default function Produit() {
+  const listeProduits = produits.map((produit) => (
+    <li key={produit.id}>
+      <button id={produit.id} onClick={montrerId}>
+        {produit.name}
+      </button>
+    </li>
+  ));
+
   return (
     <div className="produit">
-      <ul>
-        {produits.map((produit) => (
-          <li key={produit.name}>
-            <button id={produit.id} onClick={montrerId}>
-              {produit.name}
-            </button>
-          </li>
-        ))}
-      </ul>
+      <ul>{listeProduits}</ul>
     </div>
   );
 }
