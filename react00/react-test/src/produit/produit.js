@@ -14,10 +14,8 @@ export default function Produit() {
       <ul>
         {produits.map((produit) => (
           <li key={produit.name}>
-            <button onClick={montrerId}>
-              <span role="img" id={produit.id}>
-                {produit.name}
-              </span>
+            <button id={produit.id} onClick={montrerId}>
+              {produit.name}
             </button>
           </li>
         ))}
