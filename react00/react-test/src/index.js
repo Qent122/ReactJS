@@ -14,7 +14,9 @@ root.render(
     <Header />
     <Emoji />
     <Produit />
-    <Message />
+    <Message messagePasser="Yo les Reacteux !" prenom="Maurice" />
+    <Message messagePasser="I love green." prenom="Rachida" />
+    <Message messagePasser="Faite l'amour et du JS !" prenom="Geraldine" />
     <App />
     <Footer />
   </React.StrictMode>

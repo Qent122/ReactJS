@@ -1,4 +1,15 @@
 .message{
-height: 3rem;
 background-color: #0f0;
+}
+
+h2{
+    margin: 0;
+}
+.message h3{
+    color: #fff;
+    text-shadow: 2px 2px 3px #000;
+}
+
+p{
+    margin: 0;
 }
