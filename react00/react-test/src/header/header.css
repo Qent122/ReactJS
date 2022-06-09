@@ -1,13 +1,16 @@
+*{
+text-decoration: none;
+
+}
+
 .header {
   min-height: 8rem;
-  border-bottom: 1px solid #fff;
-  background-color: #282c34;
+  background-color: #ffffff;
   color: #61dafb;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .presentation {
@@ -19,49 +22,33 @@
   gap: 5rem;
   display: flex;
 
-}
 
+}
+.nav ul li link{
+text-decoration: none;
+  color: #fff;
+}
 .logo {
   height: 5rem;
   animation: anim-logo infinite 1s;
 }
 
 .moto {
+  /* border-bottom: 1px solid #000; */
   cursor: no-drop;
   font-size: 3rem;
-  animation: anim-moto infinite 10s linear;
+  animation: anim-moto infinite 5s linear;
 
 }
 
 @keyframes anim-moto {
  0% {
-    transform: translateX(1400%);
+    transform: translateX(1500%);
   }
 
   50% {
     transform: translateX(0%) rotate(90deg);
   }
-
-  /* 35% {
-    
-    transform: translateX(-350%) rotate(45deg)
-  } */
-
-  /* 50% {
-    transform: translateX(-1500%) rotate(45deg);
-  }
-
-  51% {
-    transform: translateX(-1500%) rotateY(180deg)
-  }
-
-  75% {
-    transform: translateX(1500%) rotate(45deg);
-  }
-
-  76% {
-    transform: translateX(1500%) rotateY(0deg)
-  } */
 
   100% {
     transform: translate(-1500%);

@@ -1,10 +1,11 @@
 import "./header.css";
 import logo from "../logo.svg";
+import { Outlet, Link } from "react-router-dom";
 const bienvenue = <h3>Hello World !</h3>;
 
 function header() {
   return (
-    <div className="header">
+    <header className="header">
       {bienvenue}
       <div className="presentation">
         <img src={logo} className="logo" />
@@ -14,21 +15,19 @@ function header() {
       <nav className="nav">
         <ul>
           <li>
-            <a>link 1</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a>link 2</a>
+            <Link to="/message">Message</Link>
           </li>
           <li>
-            <a>link 3</a>
-          </li>
-          <li>
-            <a>link 4</a>
+            <Link to="/produit">Produit</Link>
           </li>
         </ul>
       </nav>
       <div className="moto">🏍️</div>
-    </div>
+      <Outlet />
+    </header>
   );
 }
 

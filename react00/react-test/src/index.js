@@ -1,6 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import "./index.css";
+
+// structure page
 import App from "./app/App";
 import Footer from "./footer/footer";
 import Header from "./header/header";
@@ -10,11 +14,24 @@ import Message from "./message/message";
 import Card from "./card/card";
 import CardProps from "./cardProps/cardProps";
 
+// ceci est le DOm domc la structure de la page
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Header />
-    <Emoji />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Header />}>
+          <Route index element={<App />}></Route>
+          <Route path="app" element={<App />}></Route>
+
+          <Route path="message" element={<Message />}></Route>
+
+          <Route path="produit" element={<Produit />}></Route>
+        </Route>
+      </Routes>
+    </BrowserRouter>
+    {/* <Header /> */}
+    {/* <Emoji />
     <Produit />
     <Message messagePasser="Yo les Reacteux !" prenom="Maurice" />
     <Message messagePasser="I love green." prenom="Rachida" />
@@ -48,7 +65,7 @@ root.render(
       Avis="Avis: 278"
     />
     <App />
-    <Footer />
+    <Footer /> */}
   </React.StrictMode>
 );
 
