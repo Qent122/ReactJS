@@ -1,0 +1,15 @@
+#cardProps {
+    margin: 0;
+
+    padding: 1rem;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 79, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
+}
+#cardProps figcaption h4{
+    margin: 0;
+}
+#cardProps img{
+    border: 5px solid #fff;
+    border-style: double;
+    
+}
