@@ -56,9 +56,10 @@ const cardProduits = [
 export default function Card() {
   const listeCard = cardProduits.map((produit) => (
     <figure key={produit.id}>
+      <h2>{produit.titre}</h2>
+
       <img src={produit.img} alt={produit.alt} />
       <figcaption>
-        <h2>{produit.titre}</h2>
         <p>{produit.description}</p>
         <h3>{produit.prix}</h3>
         <h4>{produit.Avis}</h4>

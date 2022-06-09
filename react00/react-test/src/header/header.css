@@ -29,25 +29,25 @@
 .moto {
   cursor: no-drop;
   font-size: 3rem;
-  animation: anim-moto infinite 15s linear;
+  animation: anim-moto infinite 10s linear;
 
 }
 
 @keyframes anim-moto {
-  from {
-    transform: translate(0);
-  }
-
-  25% {
-    transform: translateX(-150%);
-  }
-
-  35% {
-    
-    transform: translateX(-350%) rotate(45deg)
+ 0% {
+    transform: translateX(1400%);
   }
 
   50% {
+    transform: translateX(0%) rotate(90deg);
+  }
+
+  /* 35% {
+    
+    transform: translateX(-350%) rotate(45deg)
+  } */
+
+  /* 50% {
     transform: translateX(-1500%) rotate(45deg);
   }
 
@@ -61,10 +61,10 @@
 
   76% {
     transform: translateX(1500%) rotateY(0deg)
-  }
+  } */
 
   100% {
-    transform: translate(0);
+    transform: translate(-1500%);
   }
 
 }
