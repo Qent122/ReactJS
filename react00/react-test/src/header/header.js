@@ -27,6 +27,7 @@ function header() {
           </li>
         </ul>
       </nav>
+      <div className="moto">🏍️</div>
     </div>
   );
 }

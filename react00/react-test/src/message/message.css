@@ -1,5 +1,6 @@
 .message{
-background-color: #0f0;
+    padding: 1rem;
+    background-color: #282c34;
 }
 
 h2{
@@ -10,6 +11,7 @@ h2{
     text-shadow: 2px 2px 3px #000;
 }
 
-p{
+.message p{
+    text-shadow: 4px 0px 3px #fff;
     margin: 0;
 }
