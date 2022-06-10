@@ -14,6 +14,7 @@ import Message from "./message/message";
 import Card from "./card/card";
 import Contact from "./contact/contact";
 import CardProps from "./cardProps/cardProps";
+import Posts from "./posts/posts";
 
 // ceci est le DOm domc la structure de la page
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -28,6 +29,8 @@ root.render(
           <Route path="contact" element={<Contact />}></Route>
 
           <Route path="message" element={<Message />}></Route>
+
+          <Route path="posts" element={<Posts />}></Route>
 
           <Route path="produit" element={<Produit />}></Route>
         </Route>

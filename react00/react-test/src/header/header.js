@@ -29,6 +29,9 @@ function header() {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
+          <li>
+            <Link to="/Posts">Posts</Link>
+          </li>
         </ul>
       </nav>
       <div className="moto">🏍️</div>
