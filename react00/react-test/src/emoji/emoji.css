@@ -7,12 +7,12 @@
     padding: 1rem;
 
 }
-li {
+.emoji li {
     list-style: none;
 
     color: #fff;
 }
-button {
+.emoji button {
     font-size: 2rem;
     height: 2.5rem;
     aspect-ratio: 1;
@@ -23,11 +23,11 @@ button {
     cursor: pointer;
 
 }
-span{
+.emoji span{
     height: 5rem;
     aspect-ratio: 1;
 }
 
-div{
+.emoji div{
     text-align: center;
 } 

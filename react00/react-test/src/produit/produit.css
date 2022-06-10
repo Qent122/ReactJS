@@ -2,7 +2,7 @@
     width: 100%;
 }
 
-button{
+.produit button{
     color:#fff
 }
 .produit ul{
@@ -13,3 +13,5 @@ button{
 .produit ul li button{
     font-size: 1rem;
 }
+
+
