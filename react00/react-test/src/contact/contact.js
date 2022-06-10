@@ -6,16 +6,27 @@ export default function Contact() {
   const [prenom, setPrenom] = useState("");
   const [email, setEmail] = useState("");
   const [textarea, setText] = useState("");
+  const [jour, setJour] = useState("Lundi");
 
   const valider = (event) => {
     event.preventDefault();
-    alert(`Ravis de vous revoir : ${prenom} ${name}Identifiant : ${email}  `);
+    alert(
+      `Ravis de vous revoir : ${prenom} ${name},
+      Identifiant : ${email},
+      Votre Message : ${textarea},
+      Jour : ${jour}, `
+    );
   };
 
   const handleChange = (event) => {
     setText(event.target.value);
   };
 
+  const handleJour = (event) => {
+    setJour(event.target.value);
+  };
+
+  console.log("jour : ", jour);
   console.log("Nom :", name);
   console.log("Prénom :", prenom);
   console.log("Mail :", email);
@@ -25,6 +36,22 @@ export default function Contact() {
     <div className="contact">
       <h1>Contact</h1>
       <form onSubmit={valider}>
+        <label>
+          Mr
+          <input
+            type="checkbox"
+            value={name}
+            onChange={(element) => setName(element.target.value)}
+            required
+          />
+          Mme
+          <input
+            type="checkbox"
+            value={name}
+            onChange={(element) => setName(element.target.value)}
+            required
+          />
+        </label>
         <label>
           Nom :
           <input
@@ -52,7 +79,6 @@ export default function Contact() {
           />
         </label>
         <label>
-          Commentaire :
           <textarea
             value={textarea}
             placeholder="Saisissez votre commentaire"
@@ -61,7 +87,7 @@ export default function Contact() {
         </label>
         <label>
           Jour de la semaine :
-          <select>
+          <select value={jour} onChange={handleJour}>
             <option value="lundi">Lundi</option>
             <option value="mardi">Mardi</option>
             <option value="mercredi">Mercredi</option>
