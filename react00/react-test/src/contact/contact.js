@@ -5,15 +5,21 @@ export default function Contact() {
   const [name, setName] = useState("");
   const [prenom, setPrenom] = useState("");
   const [email, setEmail] = useState("");
+  const [textarea, setText] = useState("");
 
   const valider = (event) => {
     event.preventDefault();
-    alert(`Votre prenom est : ${prenom}`);
+    alert(`Ravis de vous revoir : ${prenom} ${name}Identifiant : ${email}  `);
   };
 
-  console.log(name);
-  console.log(prenom);
-  console.log(email);
+  const handleChange = (event) => {
+    setText(event.target.value);
+  };
+
+  console.log("Nom :", name);
+  console.log("Prénom :", prenom);
+  console.log("Mail :", email);
+  console.log("Commentaire :", textarea);
 
   return (
     <div className="contact">
@@ -25,6 +31,7 @@ export default function Contact() {
             type="text"
             value={name}
             onChange={(element) => setName(element.target.value)}
+            required
           />
         </label>
         <label>
@@ -33,6 +40,7 @@ export default function Contact() {
             type="text"
             value={prenom}
             onChange={(element) => setPrenom(element.target.value)}
+            required
           />
         </label>
         <label>
@@ -43,7 +51,27 @@ export default function Contact() {
             onChange={(element) => setEmail(element.target.value)}
           />
         </label>
-        <input type="submit" />
+        <label>
+          Commentaire :
+          <textarea
+            value={textarea}
+            placeholder="Saisissez votre commentaire"
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Jour de la semaine :
+          <select>
+            <option value="lundi">Lundi</option>
+            <option value="mardi">Mardi</option>
+            <option value="mercredi">Mercredi</option>
+            <option value="jeudi">Jeudi</option>
+            <option value="vendredi">Vendredi</option>
+            <option value="samedi">Samedi</option>
+            <option value="dimanche">Dimanche</option>
+          </select>
+        </label>
+        <input id="submit" type="submit" />
       </form>
     </div>
   );
