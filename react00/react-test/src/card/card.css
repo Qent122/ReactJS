@@ -1,11 +1,17 @@
+.bc{
+    padding: 3rem;
+    background-color: #282c34;
+
+}
+.bc h2{
+    padding-bottom: 3rem;
+}
 .card {
     display: flex;
     justify-content: space-between;
-    background-color: #282c34;
-
-
 }
-.card figure{
+
+.card figure {
 
     animation: anim-card infinite 8s linear;
     background-color: #282c34;
@@ -14,24 +20,28 @@
     border-radius: 20px;
 
 }
+
 .card figure img {
     width: 80%;
     margin-top: 1rem;
 
 }
-.card figure figcaption h2{
+
+.card figure figcaption h2 {
     place-self: start end;
 }
 
 @keyframes anim-card {
     from {
-      transform: rotate(35deg);
+        transform: rotate(35deg);
     }
+
     50% {
-      transform: rotate(-35deg);
+        transform: rotate(-35deg);
     }
+
     100% {
         transform: rotate(35deg);
-     
-      }
-  } 
+
+    }
+}

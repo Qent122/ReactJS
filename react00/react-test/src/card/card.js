@@ -67,9 +67,9 @@ export default function Card() {
     </figure>
   ));
   return (
-    <div className="card">
+    <div className="bc">
       <h2>Meilleures ventes</h2>
-      {listeCard}
+      <div className="card">{listeCard}</div>
     </div>
   );
 }

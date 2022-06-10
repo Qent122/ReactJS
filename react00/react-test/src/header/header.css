@@ -43,7 +43,7 @@ text-decoration: none;
 
 @keyframes anim-moto {
  0% {
-    transform: translateX(1500%);
+    transform: translateX(1700%);
   }
 
   50% {
@@ -51,7 +51,7 @@ text-decoration: none;
   }
 
   100% {
-    transform: translate(-1500%);
+    transform: translate(-1700%);
   }
 
 }

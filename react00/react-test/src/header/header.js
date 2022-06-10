@@ -18,10 +18,16 @@ function header() {
             <Link to="/">Home</Link>
           </li>
           <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+          <li>
             <Link to="/message">Message</Link>
           </li>
           <li>
             <Link to="/produit">Produit</Link>
+          </li>
+          <li>
+            <Link to="/card">Meilleures ventes</Link>
           </li>
         </ul>
       </nav>

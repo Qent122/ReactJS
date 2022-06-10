@@ -12,6 +12,7 @@ import Emoji from "./emoji/emoji";
 import Produit from "./produit/produit";
 import Message from "./message/message";
 import Card from "./card/card";
+import Contact from "./contact/contact";
 import CardProps from "./cardProps/cardProps";
 
 // ceci est le DOm domc la structure de la page
@@ -22,7 +23,9 @@ root.render(
       <Routes>
         <Route path="/" element={<Header />}>
           <Route index element={<App />}></Route>
-          <Route path="app" element={<App />}></Route>
+          <Route path="card" element={<Card />}></Route>
+
+          <Route path="contact" element={<Contact />}></Route>
 
           <Route path="message" element={<Message />}></Route>
 
