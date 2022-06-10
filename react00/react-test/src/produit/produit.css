@@ -1,9 +1,10 @@
 .produit{
     width: 100%;
+    list-style: none;
 }
 
 .produit button{
-    color:#fff
+    /* color:#fff */
 }
 .produit ul{
     padding: 0;
